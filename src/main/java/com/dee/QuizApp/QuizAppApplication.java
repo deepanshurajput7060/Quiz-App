@@ -12,8 +12,8 @@ import io.swagger.v3.oas.annotations.info.Info;
 @SpringBootApplication
 @OpenAPIDefinition (
 		info = @Info(
-				title = "Questions microservie REST API Documentation",
-				description = "Quiz Application Questions microservie REST API Documentation",
+				title = "Quiz-Application REST API Documentation",
+				description = "Quiz Application Documentation",
 				contact = @Contact(
 						name = "Deepanshu Rajput",
 						email = "dee@gmail.com")
