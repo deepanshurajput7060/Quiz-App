@@ -24,7 +24,7 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 
 @Tag (
-	name = "APIs for Quiz Application",
+	name = "APIs for Question service",
 	description = "CRUD Operations")
 
 @RestController
@@ -61,7 +61,7 @@ public class QuestionController {
 			summary = "Add Questions REST API",
 			description = "REST API to Add question",
 			responses = {
-					@ApiResponse (responseCode = "200", description = "HTTP Status OK")
+					@ApiResponse (responseCode = "201", description = "HTTP Status CREATED")
 			})
 	@PostMapping("/add")
 	public ResponseEntity<String> addQuestion(@Valid @RequestBody QuestionDto questionDto) {

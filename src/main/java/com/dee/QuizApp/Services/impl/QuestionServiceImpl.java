@@ -64,7 +64,10 @@ public class QuestionServiceImpl implements QuestionService{
 	
 	@Override
 	public ResponseEntity<String> deleteQuestion(Integer id) {
+		questionRepo.findById(id)
+		    .orElseThrow(() -> new ResourceNotFoundException("Question", "id", id));
 		questionRepo.deleteById(id);
+
 		String message = "Question : " + id +" deleted successfully ";
 		return new ResponseEntity<String> (message, HttpStatus.OK);
 	}	
@@ -86,13 +89,7 @@ public class QuestionServiceImpl implements QuestionService{
         }
         
         for (Question question: questions) {
-        	QuestionWrapper wrapper = new QuestionWrapper();
-        	wrapper.setId(question.getId());
-            wrapper.setQuestionTitle(question.getQuestionTitle()); // example field
-            wrapper.setOption1(question.getOption1());             // assuming you have options
-            wrapper.setOption2(question.getOption2());
-            wrapper.setOption3(question.getOption3());
-            wrapper.setOption4(question.getOption4());
+        	QuestionWrapper wrapper = modelMapper.map(question, QuestionWrapper.class);
             
             wrappers.add(wrapper);
         }
