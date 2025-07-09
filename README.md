@@ -1,5 +1,33 @@
-# Quiz-App
-The Quiz Application offers a comprehensive and extensible solution for creating, conducting, and managing quizzes. Leveraging the power of Spring framework components, it ensures robustness, and a seamless user experience. The modular and scalable architecture makes it adaptable to varying requirements, making it an ideal choice for educational institutions, training programs, or any scenario requiring a feature-rich quiz platform.
+A fully functional backend Quiz Application built with Java Spring Boot, featuring JWT-based authentication, secure REST APIs, and layered architecture. Users can register, log in, and take quizzes filtered by category and difficulty level.
 
-This Quiz App is developed with Spring Boot, Spring Data JPA, and Spring MVC, enables users to create, manage, and conduct quizzes with Restful web services.
+📌 Features
+✅ User registration & login with JWT authentication
+
+✅ Create, update, delete questions and quizzes
+
+✅ Retrieve random questions by category or difficulty
+
+✅ Role-based access control (USER, ADMIN)
+
+✅ MySQL database integration using Spring Data JPA
+
+✅ API documentation using Swagger UI
+
+🔧 Tech Stack
+Backend: Java, Spring Boot, Spring Security, JWT
+
+Database: MySQL, JPA (Hibernate)
+
+Tools: Swagger, Postman, Maven
+
+
+📁 Project Structure
+
+src/main/java/com/example/quizapp/
+├── controller
+├── entity
+├── repository
+├── service
+├── security
+├── dto
 
