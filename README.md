@@ -7,8 +7,6 @@ A fully functional backend Quiz Application built with Java Spring Boot, featuri
 
 ✅ Retrieve random questions by category or difficulty
 
-✅ Role-based access control (USER, ADMIN)
-
 ✅ MySQL database integration using Spring Data JPA
 
 ✅ API documentation using Swagger UI
