@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.springframework.http.ResponseEntity;
 
-import com.dee.QuizApp.Entity.utils.QuestionDto;
+import com.dee.QuizApp.Dto.QuestionDto;
 import com.dee.QuizApp.Entity.utils.QuestionWrapper;
 import com.dee.QuizApp.Entity.utils.Response;
 

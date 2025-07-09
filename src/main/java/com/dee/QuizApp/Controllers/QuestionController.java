@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.dee.QuizApp.Entity.utils.QuestionDto;
+import com.dee.QuizApp.Dto.QuestionDto;
 import com.dee.QuizApp.Entity.utils.QuestionWrapper;
 import com.dee.QuizApp.Entity.utils.Response;
 import com.dee.QuizApp.Services.QuestionService;

@@ -1,4 +1,4 @@
-package com.dee.QuizApp.Entity.utils;
+package com.dee.QuizApp.Dto;
 
 import java.util.List;
 

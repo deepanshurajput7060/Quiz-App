@@ -11,9 +11,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
+import com.dee.QuizApp.Dto.QuestionDto;
 import com.dee.QuizApp.Entity.Question;
-
-import com.dee.QuizApp.Entity.utils.QuestionDto;
 import com.dee.QuizApp.Entity.utils.QuestionWrapper;
 import com.dee.QuizApp.Entity.utils.Response;
 import com.dee.QuizApp.Exceptions.ResourceNotFoundException;

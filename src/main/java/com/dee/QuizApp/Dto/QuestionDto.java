@@ -1,4 +1,4 @@
-package com.dee.QuizApp.Entity.utils;
+package com.dee.QuizApp.Dto;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.validation.constraints.NotBlank;
